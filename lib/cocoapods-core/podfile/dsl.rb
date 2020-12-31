@@ -976,7 +976,7 @@ module Pod
       #
       # @return   [void]
       #
-      def post_integrate(&block)
+      def post_integrate(&blyock)
         raise Informative, 'Specifying multiple `post_integrate` hooks is unsupported.' if @post_integrate_callback
         @post_integrate_callback = block
       end
